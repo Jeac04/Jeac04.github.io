@@ -19,10 +19,10 @@
             <input type="number" id="tempAmbiente" class="form-control">
         </div>
         <div>
-            <label for="tempObjetivo">Temperatura Objetivo (°F):</label>
+            <label for="tempObjetivo">Temperatura Final (°F):</label>
             <input type="number" id="tempObjetivo" class="form-control">
         </div>
-        <button onclick="calcularTiempo()" class="btn btn-primary">Calcular Tiempo</button>
+        <button onclick="calcularTiempo()" class="btn btn-primary">Calcular Tiempo de Enfriamiento</button>
         <div id="resultado" class="mt-3"></div>
     </div>
 
@@ -50,7 +50,7 @@
             }
 
             if (tempObjetivo > tempInicial) {
-                resultadoElement.innerHTML = "<p class='error-message'>La temperatura objetivo es mayor que la temperatura inicial. Por favor, ingrese una temperatura objetivo menor.</p>";
+                resultadoElement.innerHTML = "<p class='error-message'>La Temperatura Final es mayor que la Temperatura Inicial. Por favor, ingrese una Temperatura Final menor.</p>";
                 return;
             }
 
